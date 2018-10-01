@@ -1,0 +1,22 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    nav li {
+        list-style: none;
+    }
+   
+    nav p {
+        display: inline-block;
+        padding: 10px;
+        background-color: antiquewhite;    
+    }
+    
+    nav a{
+        display: inline-block;
+        padding: 10px;
+        background-color: antiquewhite;    
+    }
