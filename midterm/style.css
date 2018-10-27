@@ -18,9 +18,11 @@ header {
     text-decoration: overline;
 }
 aside {
+    background-color: cadetblue;
     width: 300px;
     height: 200px;
     float: right;
+    margin:45px;
     margin-bottom: 30px;
 }
 
@@ -35,7 +37,7 @@ article {
  nav {
         display: inline-block;
         padding: 10px;
-        background-color: lightgrey;
+        background-color: cadetblue;
         margin-top: 15px;
         margin-left:85px; 
         width:100px;
@@ -68,19 +70,32 @@ main {width:1085px;
 }
 footer {
    margin-top: 30px;
+    margin-bottom: 30px;
     width: 1085px;
     height: 225px;
-        text-align: left;
+    text-align: right;
     padding-top:10px;
-    font-size: 35px;
+    font-size: 24px;
     background-color: 3B2948;
-    color:whitesmoke;
+    color:blueviolet;
     font-family: "Palatino Linotype";
     text-decoration: overline;
     clear:both;
 }
-p {
-    background-color: beige;
+p  {
+    color:beige;
     border: 1px;
-    border-bottom-style: double
+    border-bottom-style: dotted;
+    padding: 20px;
+}
+p2 {
+    
+    color:black;
+    border: 1px;
+    padding: 20px;
+    margin:30px;
+    text-align: right;
+    width:250px;
+    height: 350px;
+    font-size: 16px;
 }
