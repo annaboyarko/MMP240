@@ -7,15 +7,16 @@ body {
 
 header {
     margin-top: 30px;
+    margin-bottom: 40px;
     width: 1085px;
-    height: 45px;
+    height: 80px;
     text-align: center;
     padding-top:10px;
-    font-size: 35px;
+    font-size: 70px;
     background-color: 4A293F;
     color:whitesmoke;
     font-family: "Palatino Linotype";
-    text-decoration: overline;
+    
 }
 aside {
     background-color: cadetblue;
@@ -38,8 +39,11 @@ article {
         display: inline-block;
         padding: 10px;
         background-color: cadetblue;
+        border: 2px solid white;
+        border-radius: 15px;
         margin-top: 15px;
-        margin-left:85px; 
+        margin-left:85px;
+        margin-bottom: 40px;
         width:100px;
         text-align: center;
         font-family: "Palatino Linotype";
@@ -47,11 +51,18 @@ article {
 h1 {
     text-align: center;
     font-family: "Palatino Linotype";
-    text-decoration: overline;
+
 }
  a {
     text-decoration: none;
     color: black;
+}
+a:hover {
+    color:azure;
+        
+}
+a:visited {
+    color:beige;
 }
 
 article img {
@@ -77,9 +88,7 @@ footer {
     padding-top:10px;
     font-size: 24px;
     background-color: 3B2948;
-    color:blueviolet;
     font-family: "Palatino Linotype";
-    text-decoration: overline;
     clear:both;
 }
 p  {
