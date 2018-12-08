@@ -1,0 +1,363 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+    display: inline-block;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* Global layouts */
+@media screen and (min-width: 600px) {
+    .two-column {
+        column-count: 2;
+        column-gap: 2.4em;
+    }
+}
+
+/* Global buttons */
+.content-button {
+	padding: .5em 1em;
+	border: 3px solid #B51C35;
+	/*border-radius: 10px;*/
+	font-weight: 600;
+}
+
+a.content-button {
+	color: black;
+	text-decoration: none;
+}
+
+a.content-button:focus,
+a.content-button:hover {
+	background: #B51C35;
+	color: #FFFCED;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+.site {
+	margin: 1em;
+}
+
+.masthead,
+.main-content,
+.sidebar,
+.footer-content {
+    padding: 1em;
+    color: white;
+
+}
+.page-title {
+	padding: 1em;
+    color: #333399;
+}
+.masthead {
+
+    background-color: #333399;
+    background-image: url(urban1.jpg);
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.page-title {
+   
+    font-family: "Arial Rounded MT Bold";
+    background-image: url(handfree.png);
+    color: black;
+    background-repeat: cover;
+    font-size: 46px;
+    
+}
+
+.main-content {
+    background-color: darkgrey;
+   
+}
+
+.sidebar {
+    background-color: #EF4C4B;
+    background-image: url(books.png);
+    background-repeat: cover;
+}
+
+.footer-content {
+    background-color: #0265c0;
+    background-image: url(booksf2.png);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: lightgray;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.flex-container > div {
+  background-color: white;
+  color:1D3983;
+  width: 200px;
+  margin: 10px;
+  flex-direction: column;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+ align-content: center;
+    font-family: "Arial Rounded MT";
+}
+.container
+{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: 'flex-direction';
+	justify-content: space-between;
+	align-content: space-between;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    
+}
+a
+{
+
+text-decoration: none;
+color: #333399;
+}
+
+a:hover {
+      color: black;
+}
+.img1
+{ background-image: url(r.jpg);
+	width:300px;
+	height:276px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+     
+   
+   
+}
+
+
+.dormi {
+    height: 150px;
+    width: 400px;
+    margin-top: 30px;
+    font-size: 16px;
+    float:right
+}
+.doma {
+    height: 150px;
+    width: 400px;
+    margin-top: 30px;
+    font-size: 16px;
+    float:center;
+}
+
+.img1:hover {
+  background-image: url(r2.jpg);
+  	
+}
+
+.img2
+{ background-image: url(b.jpg);
+width:300px;
+	height:276px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.img2:hover {
+  background-image: url(b2.jpg);
+ } 
+.img3
+{ background-image: url(ev.jpg);
+width:300px;
+height:276px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.img3:hover {
+  background-image: url(ev2.jpg);
+ 	
+}
+.img4
+{ background-image: url(w.jpg);
+width:300px;
+	height:276px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.img4:hover {
+  background-image: url(w2.png);
+  	
+}
+.item {
+	flex-basis: 300px;
+}
+
