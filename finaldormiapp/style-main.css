@@ -293,8 +293,8 @@ color: #333399;
 }
 
 a:hover {
-    background-color: #F4E9CE;
-    color: black;
+    background-color: none;
+    color: forestgreen;
 }
 .img1
 { background-image: url(dorm.jpg);
