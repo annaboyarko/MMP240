@@ -44,19 +44,11 @@ button,
 input,
 select,
 textarea {
-	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Helvetica';
 	font-size: 18px;
 	line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-}
 
 p {
 	margin-bottom: 1.5em;
@@ -67,12 +59,6 @@ strong {
 	font-weight: bold;
 }
 
-dfn,
-cite,
-em,
-i {
-	font-style: italic;
-}
 
 blockquote {
 	margin: 0 1.5em;
@@ -138,7 +124,7 @@ big {
 /* Global layouts */
 @media screen and (min-width: 600px) {
     .two-column {
-        column-count: 2;
+        column-count: 3;
         column-gap: 2.4em;
     }
 }
@@ -215,17 +201,18 @@ General styling
 .masthead {
 
     background-color: #333399;
-    background-image: url(urban1.jpg);
+    background-image: url(lines.png);
     background-repeat: no-repeat;
     padding-left: 50px;
     padding-bottom: 50px;
+    padding-top: 100px;
     background-attachment: fixed; 
 }
 
 .page-title {
    
-    font-family: "Arial Rounded MT";
-    background-image: url(handfree.png);
+    font-family: "Arial";
+    background-image: url(lines2.png);
     color: black;
     background-repeat: cover;
     font-size: 46px;
@@ -233,41 +220,40 @@ General styling
 }
 
 .main-content {
-    background-color: darkgrey;
+    background-color:  #5d6d7e;
    
 }
 
 .sidebar {
-    background-color: #EF4C4B;
-    background-image: url(books.png);
-    background-repeat: cover;
+    background-color: black;
+    
 }
 
 .footer-content {
-    background-color: #0265c0;
-    background-image: url(booksf2.png);
+     background-color: #c2c2d6;
+     color: black;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: lightgray;
+  background-color: #c2c2d6;
   flex-direction: column;
   padding-left: 30px;
 }
 
 .flex-container > div {
   background-color: white;
-  color:1D3983;
-  width: 200px;
+  color:grey;
+  width: 300px;
   margin: 10px;
   flex-direction: column;
   border-radius: 15px;
   text-align: center;
   line-height: 45px;
-  font-size: 30px;
+  font-size: 24px;
  align-content: center;
-    font-family: "Arial Rounded MT";
+    font-family: "Arial";
 }
 .container
 {
@@ -279,7 +265,7 @@ General styling
 	align-content: space-between;
     color: black;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
     
@@ -287,74 +273,56 @@ General styling
 }
 a
 {
-
 text-decoration: none;
 color: #333399;
 }
 
 a:hover {
     background-color: none;
-    color: forestgreen;
+    color: black;
 }
+
+
 .img1
-{ background-image: url(dorm.jpg);
-	width:300px;
-	height:276px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-     
-   
-   
-}
-
-
-.dormi {
-    height: 150px;
-    width: 400px;
-    margin-top: 30px;
-    font-size: 16px;
-    float:right
-}
-.doma {
-    height: 150px;
-    width: 400px;
-    margin-top: 30px;
-    font-size: 16px;
-    float:center;
+{ 
+  width:300px;
+  height:276px;
+  margin-bottom: 10px;
+  border-radius: 10px;     
 }
 
 .img1:hover {
   background-image: url(dorm2.jpg);
-  	
+    
 }
-
 .img2
-{ background-image: url(friends.jpg);
-width:300px;
-	height:276px;
+{ 
+    width:300px;
+	  height:276px;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .img2:hover {
   background-image: url(friend2.jpg);
  } 
+
 .img3
-{ background-image: url(exp2.jpg);
-width:300px;
-height:276px;
+{ 
+    width:300px;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .img3:hover {
   background-image: url(exp.jpg);
  	
 }
 .img4
-{ background-image: url(study1.jpg);
-width:300px;
-	height:276px;
+{ 
+    width:300px;
+	  height:auto;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .img4:hover {
   background-image: url(study2.jpg);
